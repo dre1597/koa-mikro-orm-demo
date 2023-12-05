@@ -1,0 +1,23 @@
+### List all authors
+GET http://localhost:3000/authors
+
+### Get an author by ID
+GET http://localhost:3000/authors/1
+
+### Create an author
+POST http://localhost:3000/authors
+Content-Type: application/json
+
+{
+  "name": "any_name",
+  "email": "any_email@example.com"
+}
+
+### Update an author
+PUT http://localhost:3000/authors/1
+Content-Type: application/json
+
+{
+  "name": "updated_name",
+  "email": "any_email@example.com"
+}
