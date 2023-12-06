@@ -21,3 +21,27 @@ Content-Type: application/json
   "name": "updated_name",
   "email": "any_email@example.com"
 }
+
+### List all books
+GET http://localhost:3000/books
+
+### Get a book by ID
+GET http://localhost:3000/books/1
+
+### Create a book
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "title": "any_title",
+  "author_id": 1
+}
+
+### Update a book
+PUT http://localhost:3000/books/1
+Content-Type: application/json
+
+{
+  "title": "updated_title",
+  "author_id": 1
+}

@@ -10,6 +10,8 @@ export class Book extends BaseEntity {
   @Property({ type: StringType })
   title!: string;
 
+  authorId?: number;
+
   @ManyToOne(() => Author)
   author!: Author;
 

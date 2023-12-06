@@ -22,7 +22,7 @@ export async function getAuthorById(id: number) {
 export async function createAuthor(name: string, email: string) {
   const author = new Author(name, email);
 
-  await DI.em.persist(author).flush();
+  await DI.em.persistAndFlush(author);
 
   return author;
 }
